@@ -12,9 +12,11 @@ class Plant extends Model implements HasMedia
     /** @use HasFactory<\Database\Factories\PlantFactory> */
     use HasFactory;
     use InteractsWithMedia;
+
     const STATUS_PENDING = 'pending';
     const STATUS_APPROVED = 'approved';
     const STATUS_REJECTED = 'rejected';
+
     const statusTypes = [
         self::STATUS_PENDING,
         self::STATUS_APPROVED,
@@ -35,7 +37,7 @@ class Plant extends Model implements HasMedia
         return $this->belongsToMany(
             Tag::class,
             PlantTag::class
-        )->withPivot('relevance_score')->withTimestamps();
+        );
     }
 
     public function discoveries()

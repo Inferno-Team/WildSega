@@ -258,7 +258,7 @@ endpoints:
         name: is_protected_area
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -278,7 +278,7 @@ endpoints:
       latitude: -89
       longitude: -180
       area_name: consequatur
-      is_protected_area: false
+      is_protected_area: true
     fileParameters:
       image: null
     responses: []

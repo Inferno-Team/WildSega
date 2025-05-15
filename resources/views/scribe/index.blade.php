@@ -723,7 +723,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --form "longitude=-180"\
     --form "area_name=consequatur"\
     --form "is_protected_area=1"\
-    --form "image=@C:\Users\HP\AppData\Local\Temp\phpD6E4.tmp" </code></pre></div>
+    --form "image=@C:\Users\HP\AppData\Local\Temp\phpE1E8.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -898,7 +898,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\phpD6E4.tmp</code></p>
+<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\phpE1E8.tmp</code></p>
         </div>
         </form>
 
@@ -1074,8 +1074,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --form "latitude=-89"\
     --form "longitude=-180"\
     --form "area_name=consequatur"\
-    --form "is_protected_area="\
-    --form "image=@C:\Users\HP\AppData\Local\Temp\phpD705.tmp" </code></pre></div>
+    --form "is_protected_area=1"\
+    --form "image=@C:\Users\HP\AppData\Local\Temp\phpE218.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1093,7 +1093,7 @@ const body = new FormData();
 body.append('latitude', '-89');
 body.append('longitude', '-180');
 body.append('area_name', 'consequatur');
-body.append('is_protected_area', '');
+body.append('is_protected_area', '1');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -1251,7 +1251,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -1262,7 +1262,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\phpD705.tmp</code></p>
+<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\phpE218.tmp</code></p>
         </div>
         </form>
 
