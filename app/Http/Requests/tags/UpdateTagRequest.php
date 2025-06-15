@@ -13,7 +13,7 @@ class UpdateTagRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return Auth::user()->hasRole('admin');
+        return Auth::check() &&  Auth::user()->hasRole('admin');
     }
 
     /**

@@ -37,7 +37,7 @@ class Plant extends Model implements HasMedia
         return $this->belongsToMany(
             Tag::class,
             PlantTag::class
-        );
+        )->withTimestamps();
     }
 
     public function discoveries()

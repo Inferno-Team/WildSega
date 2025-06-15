@@ -24,7 +24,7 @@ class PlantDiscoveryRequest extends FormRequest
             'longitude' => 'nullable|numeric|between:-180,180',  // Longitude validation
             'area_name' => 'required|string',
             'is_protected_area' => 'nullable|boolean',
-            'image' => 'required|file|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'required|file|image|mimes:jpeg,png,jpg,gif|max:2048', // 2MB
         ];
     }
 }

@@ -9,6 +9,14 @@ class Tag extends Model
 {
     use HasFactory;
 
+    const TYPE_CATEGORY = 'category';
+    const TYPE_SEASON = 'season';
+    const TYPE_FEATURE = 'feature';
+    const TYPES = [
+        self::TYPE_CATEGORY,
+        self::TYPE_SEASON,
+        self::TYPE_FEATURE
+    ];
 
     protected $fillable = [
         'name',

@@ -10,13 +10,13 @@ class StoreTagRequest extends FormRequest
 {
     public function authorize()
     {
-        return Auth::user()->hasRole('admin');
+        return Auth::check() &&  Auth::user()->hasRole('admin');
     }
 
     public function rules()
     {
         return [
-            'name' => ['required', 'string', 'max:255', 'unique:tags'],
+            'name' => ['required', 'string', 'max:255', 'unique:tags,name'],
         ];
     }
 }

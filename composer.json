@@ -14,12 +14,14 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
         "openai-php/client": "^0.12.0",
+        "recca0120/laravel-erd": "^0.4.0",
         "spatie/laravel-medialibrary": "^11.12",
         "spatie/laravel-permission": "^6.17"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.5",
         "fakerphp/faker": "^1.23",
+        "knuckleswtf/scribe": "^5.2",
         "laravel/breeze": "^2.3",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
@@ -38,7 +40,10 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "app/Helpers/calculateHaversineDistance.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [

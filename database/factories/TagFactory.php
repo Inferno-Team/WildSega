@@ -13,6 +13,7 @@ class TagFactory extends Factory
     {
         return [
             'name' => fake()->name(),
+            // 'type' => fake()->randomElement(Tag::TYPES),
         ];
     }
 }

@@ -13,6 +13,7 @@ class PlantTag extends Model
     protected $fillable = [
         'plant_id',
         'tag_id',
+        'relevance_score',
     ];
     public function plant(): BelongsTo
     {
