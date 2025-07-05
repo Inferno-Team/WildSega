@@ -4,6 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Http\Resources\PlantDiscoveryWithoutPlantResource;
 
 class PlantResource extends JsonResource
 {
@@ -19,6 +20,7 @@ class PlantResource extends JsonResource
             'status' => $this->status,
             'image_url' => $this->getMedia('images')->first()?->getUrl(),
             'tags' => $this->whenLoaded('tags', TagResource::collection($this->tags)),
+            'discoveries' => PlantDiscoveryWithoutPlantResource::collection($this->discoveries),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

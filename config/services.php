@@ -34,8 +34,6 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-    'deepinfra' => [
-        'key' => env('DEEPAI_API_KEY'),
-    ],
+
 
 ];

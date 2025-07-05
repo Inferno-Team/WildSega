@@ -8,6 +8,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\PlantDiscoveryRequest;
 use App\Http\Resources\PlantDiscoveryResource;
+use App\Jobs\FindPlantByImageJob;
+use App\Models\Plant;
+use Illuminate\Support\Facades\Http;
+use Log;
 
 /**
  * @group Discoveries
@@ -34,7 +38,8 @@ class PlantDiscoveryController extends Controller
 
         $discovery = PlantDiscovery::create($data);
         $discovery->addMedia($request->file('image'))->toMediaCollection('images');
-        dispatch(new AskPlantAIJob($discovery));
+        $imagePath = $discovery->media->first()->getPath();
+        dispatch(new FindPlantByImageJob($imagePath, $discovery->id));
         return new PlantDiscoveryResource($discovery);
     }
 

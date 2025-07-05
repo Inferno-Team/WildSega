@@ -72,38 +72,38 @@ endpoints:
       latitude:
         name: latitude
         description: 'Must be between -90 and 90.'
-        required: false
+        required: true
         example: -89
         type: number
         enumValues: []
         exampleWasSpecified: false
-        nullable: true
+        nullable: false
         custom: []
       longitude:
         name: longitude
         description: 'Must be between -180 and 180.'
-        required: false
+        required: true
         example: -180
         type: number
         enumValues: []
         exampleWasSpecified: false
-        nullable: true
+        nullable: false
         custom: []
       area_name:
         name: area_name
         description: ''
-        required: true
+        required: false
         example: consequatur
         type: string
         enumValues: []
         exampleWasSpecified: false
-        nullable: false
+        nullable: true
         custom: []
       is_protected_area:
         name: is_protected_area
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -123,7 +123,7 @@ endpoints:
       latitude: -89
       longitude: -180
       area_name: consequatur
-      is_protected_area: false
+      is_protected_area: true
     fileParameters:
       image: null
     responses: []
@@ -227,38 +227,38 @@ endpoints:
       latitude:
         name: latitude
         description: 'Must be between -90 and 90.'
-        required: false
+        required: true
         example: -89
         type: number
         enumValues: []
         exampleWasSpecified: false
-        nullable: true
+        nullable: false
         custom: []
       longitude:
         name: longitude
         description: 'Must be between -180 and 180.'
-        required: false
+        required: true
         example: -180
         type: number
         enumValues: []
         exampleWasSpecified: false
-        nullable: true
+        nullable: false
         custom: []
       area_name:
         name: area_name
         description: ''
-        required: true
+        required: false
         example: consequatur
         type: string
         enumValues: []
         exampleWasSpecified: false
-        nullable: false
+        nullable: true
         custom: []
       is_protected_area:
         name: is_protected_area
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -278,7 +278,7 @@ endpoints:
       latitude: -89
       longitude: -180
       area_name: consequatur
-      is_protected_area: false
+      is_protected_area: true
     fileParameters:
       image: null
     responses: []

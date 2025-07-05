@@ -722,8 +722,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --form "latitude=-89"\
     --form "longitude=-180"\
     --form "area_name=consequatur"\
-    --form "is_protected_area="\
-    --form "image=@C:\Users\HP\AppData\Local\Temp\php959E.tmp" </code></pre></div>
+    --form "is_protected_area=1"\
+    --form "image=@C:\Users\HP\AppData\Local\Temp\phpFD6E.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -741,7 +741,7 @@ const body = new FormData();
 body.append('latitude', '-89');
 body.append('longitude', '-180');
 body.append('area_name', 'consequatur');
-body.append('is_protected_area', '');
+body.append('is_protected_area', '1');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -838,7 +838,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
         <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>latitude</code></b>&nbsp;&nbsp;
 <small>number</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="latitude"                data-endpoint="POSTapi-discoveries"
                value="-89"
@@ -849,7 +849,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>longitude</code></b>&nbsp;&nbsp;
 <small>number</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="longitude"                data-endpoint="POSTapi-discoveries"
                value="-180"
@@ -860,7 +860,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>area_name</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="area_name"                data-endpoint="POSTapi-discoveries"
                value="consequatur"
@@ -887,7 +887,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -898,7 +898,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\php959E.tmp</code></p>
+<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\phpFD6E.tmp</code></p>
         </div>
         </form>
 
@@ -1074,8 +1074,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --form "latitude=-89"\
     --form "longitude=-180"\
     --form "area_name=consequatur"\
-    --form "is_protected_area="\
-    --form "image=@C:\Users\HP\AppData\Local\Temp\php95BF.tmp" </code></pre></div>
+    --form "is_protected_area=1"\
+    --form "image=@C:\Users\HP\AppData\Local\Temp\phpFD80.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1093,7 +1093,7 @@ const body = new FormData();
 body.append('latitude', '-89');
 body.append('longitude', '-180');
 body.append('area_name', 'consequatur');
-body.append('is_protected_area', '');
+body.append('is_protected_area', '1');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -1202,7 +1202,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
         <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>latitude</code></b>&nbsp;&nbsp;
 <small>number</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="latitude"                data-endpoint="PUTapi-discoveries--id-"
                value="-89"
@@ -1213,7 +1213,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>longitude</code></b>&nbsp;&nbsp;
 <small>number</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="longitude"                data-endpoint="PUTapi-discoveries--id-"
                value="-180"
@@ -1224,7 +1224,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>area_name</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="area_name"                data-endpoint="PUTapi-discoveries--id-"
                value="consequatur"
@@ -1251,7 +1251,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -1262,7 +1262,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\php95BF.tmp</code></p>
+<p>Must be a file. Must be an image. Must not be greater than 2048 kilobytes. Example: <code>C:\Users\HP\AppData\Local\Temp\phpFD80.tmp</code></p>
         </div>
         </form>
 

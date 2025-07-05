@@ -33,6 +33,6 @@ class PlantDiscovery extends Model implements HasMedia
 
     public function plant()
     {
-        return $this->belongsTo(Plant::class)->chaperone();
+        return $this->belongsTo(Plant::class);
     }
 }

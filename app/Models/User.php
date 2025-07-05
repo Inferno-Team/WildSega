@@ -65,4 +65,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(PlantDiscovery::class);
     }
+    public function preferences()
+    {
+        return $this->hasMany(UserPreference::class);
+    }
 }

@@ -18,6 +18,8 @@ class RegisterRequest extends FormRequest
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:6|confirmed',
             'notification_range_km' => 'nullable|integer',
+            'longitude' => 'nullable|numeric',
+            'latitude' => 'nullable|numeric'
         ];
     }
 }
